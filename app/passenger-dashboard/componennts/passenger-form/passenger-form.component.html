@@ -12,6 +12,16 @@
   <div>
     <label>
       <input
+        type="checkbox"
+        [value]="true"
+        name="checkedIn"
+        [ngModel]="detail?.checkedIn"
+        (ngModelChange)="toggleCheckIn($event)"
+      />
+    </label>
+    <!-- Radio buttons code below, comment out to use instead of checkbox -->
+    <!-- <label>
+      <input
         type="radio"
         [value]="true"
         name="checkedIn"
@@ -29,7 +39,7 @@
         (ngModelChange)="toggleCheckIn($event)"
       />
       No
-    </label>
+    </label> -->
   </div>
 
   <div *ngIf="form.value.checkedIn">

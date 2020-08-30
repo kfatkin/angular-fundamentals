@@ -9,11 +9,13 @@ import { HomeComponent } from "./home.component";
 import { NotFoundComponent } from "./notfound.component";
 
 import { AppComponent } from "./app.component";
+import { config } from "process";
 
 const routes: Routes = [
   {
     path: "",
     component: HomeComponent,
+    // redirectTo: "passengers",
     pathMatch: "full",
   },
   {

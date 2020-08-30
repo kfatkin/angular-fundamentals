@@ -36,4 +36,8 @@ export class PassengerViewerComponent implements OnInit {
         this.passenger = Object.assign({}, this.passenger, event);
       });
   }
+
+  goBack() {
+    this.router.navigate(["/passengers"]);
+  }
 }
